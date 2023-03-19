@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@100;300;500&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./../jquery/jquery-3.6.3.min"></script>
+
+    <title>ECHO</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-bg">
+            <div class="navbar ">
+                <div class="logo">
+                    <a href="/"><img src="./assets/images/logo/logo_texto_sin_fondo.png" alt="" class="logo-img"
+                            width="100"></a>
+                </div>
+                <nav class="navbar-nav">
+                    <a href="#" class="nav-link color-white">Buscar profesional</a>
+                    <a href="#" class="nav-link color-white">Buscar proyecto</a>
+                    <a href="#" class="nav-link  btn-1" type="button">Entrar</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="portada-info">
+
+            <img src="./assets/images/portada/definitiva3.png" alt="" class="main-photo" id="foto-portada">
+            <div id="info">
+                <div class="info-text">
+                    <h1 class="h1-tamanio" id="titulo-intro">Find Your Dream Developer Job Today</h1>
+                    <h2 class="h2-tamanio">Discover opportunities, connect with top companies, and launch your career as
+                        a developer</h2>
+                    <div class="btn-intro">
+                        <button type="button" class="btn-1 btn-registro texto-m">Registrarse</button>
+                        <button type="button" class="btn-1 btn-login texto-m">Entrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--Modal Formulario de registro-->
+        <section class="modal ">
+            <div class="modal-container">
+                <a href="#" class="modal-close texto-l">X</a>
+                <form action="" method="post" class="form-registro" id="form-registro">
+                    <h2 class="modal-title">¡Bienvenido!</h2>
+                    <p class="form-paragraph color-white texto texto-m">¿Aún no tienes cuenta? <a href="#"
+                            class="form-link">Entra
+                            aquí</a></p>
+                    <div class="form-container">
+                        <!--Nombre-->
+                        <div class="form-group my-2">
+                            <label class="form-label color-white texto" for="nombre">Nombre</label>
+                            <input class="form-control form-input texto" type="text" name="nombre" id="nombre"
+                                placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Apellidos-->
+                        <div class="form-group my-2">
+                            <label class="form-label color-white texto" for="apellidos">Apellidos</label>
+                            <input class="form-control form-input" type="text" name="apellidos" id="apellidos"
+                                placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Email-->
+                        <div class="form-group my-2">
+                            <label class="form-label color-white texto" for="email">Email</label>
+                            <input class="form-control form-input" type="email" name="email" id="email" placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Contraseña-->
+                        <div class="form-group my-2">
+                            <label class="form-label color-white texto" for="contrasena">Contrasena</label>
+                            <input class="form-control form-input" type="text" name="contrasena" id="contrasena"
+                                placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Nombre-->
+                        <div class="form-group my-2">
+                            <label class="form-label color-white texto" for="contrasena_repetida">Repite la
+                                contraseña</label>
+                            <input class="form-control form-input" type="text" name="contrasena_repetida"
+                                id="contrasena_repetida">
+                            <span class="form-line"></span>
+                        </div>
+                    </div>
+                    <input type="submit" class="form-submit texto btn-1" value="Entrar">
+                    <p class="warnings" id="warnings">dd</p>
+                </form>
+
+            </div>
+        </section>
+        <!--Sección de ventajas-->
+        <section class="ventajas container">
+            <h2 class="titulo-centrado m-top-3 m-botom-3 texto-xl">¿Por qué ECHO?</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="./assets/images/desarrollador.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h4 class="texto-l ">Encuentra a los mejores desarrolladores</h4>
+                        <p>Solo te mostraremos a los desarrolladores que mejor seadapten a tus necesidades</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./assets/images/empresas.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h4 class="texto-l ">Encuentra a los mejores desarrolladores</h4>
+                        <p>Solo te mostraremos a los desarrolladores que mejor seadapten a tus necesidades</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./assets/images/precio.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h4 class="texto-l ">Encuentra a los mejores desarrolladores</h4>
+                        <p>Solo te mostraremos a los desarrolladores que mejor seadapten a tus necesidades</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--Categorías profesionales-->
+        <section class="container m-top-3">
+            <h2 class="titulo-centrado m-top-3 m-botom-3 texto-xl">¿Categorías profesionalesECHO?</h2>
+            <div class="cards-grid-parent">
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/desarrollo multiplataforma.jpg" alt=""
+                        class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrollo Multiplataforma</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/desarrollo web.jpg" alt="" class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrollo Web</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/desarrollador fullstack.jpg" alt=""
+                        class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrllador Fullstack</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/ui ux diseñador.jpg" alt="" class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">UI/UX Diseñador</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child">
+                    <img src="./assets/images/categorias profesionales/desarrollador de software.jpg" alt=""
+                        class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrollador de Software</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/desarrollador IOS.jpg" alt="" class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrollador IOS</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/desarrollador android.jpg" alt=""
+                        class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrollador en Android</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/programador java.png" alt="" class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Programador en Java</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child">
+                    <img src="./assets/images/categorias profesionales/desarrollador en wordpress.jpg" alt=""
+                        class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrollador en Wordpress</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/analista de datos.jpg" alt="" class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Analista de datos</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/desarrollador escritorio.jpg" alt=""
+                        class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Desarrolador Desktop</h4>
+                    </div>
+                </article>
+                <article class="card-grid-child ">
+                    <img src="./assets/images/categorias profesionales/devops.png" alt="" class="card-img">
+                    <div class="card-body-grid">
+                        <h4 class="texto-m ">Devops</h4>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!--Testimonios profesionales-->
+        <!--
+        <section class="ventajas container">
+            <h2 class="titulo-centrado m-top-3 m-botom-3 texto-xl">Lo que dicen de nosotros</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="./assets/images/desarrollador.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h4 class="texto-l ">Encuentra a los mejores desarrolladores</h4>
+                        <p>Solo te mostraremos a los desarrolladores que mejor seadapten a tus necesidades</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./assets/images/empresas.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h4 class="texto-l ">Encuentra a los mejores desarrolladores</h4>
+                        <p>Solo te mostraremos a los desarrolladores que mejor seadapten a tus necesidades</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./assets/images/precio.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h4 class="texto-l ">Encuentra a los mejores desarrolladores</h4>
+                        <p>Solo te mostraremos a los desarrolladores que mejor seadapten a tus necesidades</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+-->
+        <!--CTA-->
+        <section class="cta-section" aria-label="call-to-action">
+            <div class="info-text-cta-section">
+                <h2 class="titulo-centrado m-top-3  texto-xl" id="cta-section">Únete a la comunidad de
+                    profesionales de
+                    desarrolladores y empieza a a trabajar</h2>
+            </div>
+            <div class="btn-intro">
+                <button type="button" class="btn-1 btn-registro color-white texto-m">Buscar profesional</button>
+                <button type="button" class="btn-1 btn-login color-white texto-m">Buscar proyecto</button>
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="pie-container">
+            <div class="logo"></div>
+            <div class="politicas">
+                <a href="./contact/cookies.html" class="politicas">Políticas de Cookies</a>
+                <a href="./contact/privacidad.html" class="politicas">Políticas de privacidad</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
