@@ -1,4 +1,3 @@
-const imagenPortada = document.querySelector("#foto-portada");
 const openModal = document.querySelector(".btn-registro")
 const abrirFormRegistro = document.querySelector(".modal")
 const cerrarFormRegistro = document.querySelector(".modal-close")
@@ -17,7 +16,6 @@ const parrafo = document.getElementById("warnings")
 console.log(inputsLabel)
 let listaUsuarios = []
 
-cambiarImagenPortada()
 cargarEventListeners();
 
 function cargarEventListeners() {
@@ -34,22 +32,6 @@ function cargarEventListeners() {
         e.preventDefault()
         abrirFormRegistro.classList.remove("modal--show")
     })
-}
-//Función que cambia la imagen de la portada en base a las dimensiones de la pantalla
-function cambiarImagenPortada() {
-    // Creamos un objeto de media query
-    const mediaQuery = window.matchMedia("(min-width: 767px)");
-
-    // Verificamos si el media query se cumple
-    if (mediaQuery.matches) {
-        // Si la pantalla es mayor o igual a 480px, cambiamos la imagen
-        console.log("coinciden")
-        imagenPortada.src = "./assets/images/portada/definitiva3.png";
-
-    } else {
-        imagenPortada.src = "./assets/images/portada/portada_mobile.png";
-
-    }
 }
 
 nombre.addEventListener("focus", (e) => {

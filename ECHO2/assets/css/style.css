@@ -57,6 +57,21 @@ a {
     color: white;
 }
 
+.btn-1 {
+    text-decoration: none;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #c10bc0;
+    border-radius: 0.5em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
 /***********************************/
 /*************Navbar*************/
 /***********************************/
@@ -129,6 +144,11 @@ main {
     margin-top: -1.5em;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+}
+
 /*************************************************/
 /*************SECCIÓN Portada*************/
 /*************************************************/
@@ -180,6 +200,161 @@ main {
 /*************************************************/
 
 /****MODAL*****/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    /*si le pongo opacity 0, no puedo seleccionar elementos de la página.
+    Con pointer events permito seleccionar elementos*/
+    /*transition: opacity .6s .9s;*/
+    transition-property: opacity;
+    transition-duration: .6s, .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition-property: opacity;
+    transition-duration: .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+
+.modal-container {
+    margin: auto;
+    /*centra vertical y horizontal*/
+    width: 90%;
+    max-width: 600px;
+    /*siempre que sea menor a 600px*/
+    max-height: 30px;
+    border-radius: 2em;
+    padding: 23em 2.5em;
+    background-color: #1B1C4F;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    border: 4px solid white;
+    box-shadow: 0 5px 10px;
+    transform: var(--transform);
+    transition: var(--transition);
+    align-content: center;
+}
+
+.modal-title {
+    font-size: 2.5rem;
+}
+
+.modal-paragraph {
+    margin-bottom: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.modal-close:hover {
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+.modal-close:hover {
+    transform: scale(1.4);
+}
+
+/***FORMULARIO DE REGISTRO*/
+.form-registro {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    max-width: 460px;
+    padding: 2.5em 3em;
+}
+
+.form-paragraph {
+    font-weight: 300;
+}
+
+.form-link {
+    font-weight: 700;
+}
+
+.form-container {
+    margin-top: 3em;
+    display: grid;
+    gap: 1.8em;
+}
+
+.form-group {
+    position: relative;
+    padding-top: 1em;
+}
+
+.form-input {
+    width: 100%;
+    background: none;
+    color: gainsboro;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/*
+.form-label:focus+.form-input,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-12px) scale(.7);
+    --transform-origin: left top;
+    color: #c10bc0;
+}*/
+
+
+
+.form-label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s .3s;
+}
+
+.subir-label {
+    transform: translateY(-12px) scale(.7);
+    padding-top: 1em;
+}
+
+.form-submit {
+    padding: 0.8em 2em;
+    margin-top: 2em;
+}
+
+.form-line {
+    position: absolute;
+}
+
+.warnings {
+    width: 480px;
+    text-align: center;
+    margin: auto;
+    color: rgb(242, 255, 0);
+    padding-top: 20px;
+}
+
+/****MODAL*****/
 
 /********************************************/
 /***************VENTAJAS***************/
@@ -196,12 +371,6 @@ main {
 
 .ventajas {
     margin-top: 5em;
-}
-
-.container {
-    width: 100%;
-    max-width: 1500px;
-    margin: auto;
 }
 
 .card {
@@ -279,3 +448,42 @@ main {
 /*********************************************************/
 /************ÚNETE A LA COMUNIDAD***********/
 /*********************************************************/
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.info-text-cta-section {
+    max-width: 800px;
+    width: 100%;
+}
+
+/*********************************************************/
+/***********************FOOTER**********************/
+/*********************************************************/
+.pie {
+    background: linear-gradient(93deg, #070C3D 5%, #0A1053 19%, #101152 32%, #1D1A4F 37%, #1B1C4F 47%, #19194E 98%);
+
+}
+
+.pie-container {
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    height: 127px;
+    padding: 35px 0;
+
+}
+
+.politicas {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    align-content: space-evenly;
+}

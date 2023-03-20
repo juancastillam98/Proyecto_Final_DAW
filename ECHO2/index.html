@@ -59,8 +59,60 @@
             </div>
         </section>
 
+        <section class="modal">
+            <div class="modal-container">
+                <a href="#" class="modal-close texto-l">X</a>
+                <form action="" method="post" class="form-registro" id="form-registro">
+                    <h2 class="modal-title texto-white">¡Bienvenido!</h2>
+                    <p class="form-paragraph texto-white texto texto-m">¿Aún no tienes cuenta? <a href="#"
+                            class="form-link">Entra
+                            aquí</a></p>
+                    <div class="form-container">
+                        <!--Nombre-->
+                        <div class="form-group my-2">
+                            <label class="form-label texto-white texto" for="nombre">Nombre</label>
+                            <input class="form-control form-input texto" type="text" name="nombre" id="nombre"
+                                placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Apellidos-->
+                        <div class="form-group my-2">
+                            <label class="form-label texto-white texto" for="apellidos">Apellidos</label>
+                            <input class="form-control form-input" type="text" name="apellidos" id="apellidos"
+                                placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Email-->
+                        <div class="form-group my-2">
+                            <label class="form-label texto-white texto" for="email">Email</label>
+                            <input class="form-control form-input" type="email" name="email" id="email" placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Contraseña-->
+                        <div class="form-group my-2">
+                            <label class="form-label texto-white texto" for="contrasena">Contrasena</label>
+                            <input class="form-control form-input" type="text" name="contrasena" id="contrasena"
+                                placeholder="">
+                            <span class="form-line"></span>
+                        </div>
+                        <!--Nombre-->
+                        <div class="form-group my-2">
+                            <label class="form-label texto-white texto" for="contrasena_repetida">Repite la
+                                contraseña</label>
+                            <input class="form-control form-input" type="text" name="contrasena_repetida"
+                                id="contrasena_repetida">
+                            <span class="form-line"></span>
+                        </div>
+                    </div>
+                    <input type="submit" class="form-submit texto btn-1" value="Entrar">
+                    <p class="warnings" id="warnings"></p>
+                </form>
+
+            </div>
+        </section>
+
         <section class="ventajas container">
-            <h2 class="titulo-centrado m-top-3 m-botom-3 texto-xl">¿Por qué ECHO?</h2>
+            <h2 class="titulo-centrado m-top-3 m-botom-3 texto-xl texto-white">¿Por qué ECHO?</h2>
             <div class="cards">
                 <article class="card">
                     <img src="./assets/images/desarrollador.jpg" alt="" class="card-img">
@@ -87,86 +139,98 @@
         </section>
 
         <section class="container m-top-3">
-            <h2 class="titulo-centrado m-top-3 m-botom-3 texto-xl">¿Categorías profesionalesECHO?</h2>
+            <h2 class="titulo-centrado m-top-3 m-botom-3 texto-xl texto-white">Categorías profesionales</h2>
             <div class="cards-grid-parent">
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/desarrollo multiplataforma.jpg" alt=""
                         class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrollo Multiplataforma</h4>
+                        <h4 class="texto-m texto-white">Desarrollo Multiplataforma</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/desarrollo web.jpg" alt="" class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrollo Web</h4>
+                        <h4 class="texto-m texto-white">Desarrollo Web</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/desarrollador fullstack.jpg" alt=""
                         class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrllador Fullstack</h4>
+                        <h4 class="texto-m texto-white">Desarrllador Fullstack</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/ui ux diseñador.jpg" alt="" class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">UI/UX Diseñador</h4>
+                        <h4 class="texto-m texto-white">UI/UX Diseñador</h4>
                     </div>
                 </article>
                 <article class="card-grid-child">
                     <img src="./assets/images/categorias profesionales/desarrollador de software.jpg" alt=""
                         class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrollador de Software</h4>
+                        <h4 class="texto-m texto-white">Desarrollador de Software</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/desarrollador IOS.jpg" alt="" class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrollador IOS</h4>
+                        <h4 class="texto-m texto-white">Desarrollador IOS</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/desarrollador android.jpg" alt=""
                         class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrollador en Android</h4>
+                        <h4 class="texto-m texto-white">Desarrollador en Android</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/programador java.png" alt="" class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Programador en Java</h4>
+                        <h4 class="texto-m texto-white">Programador en Java</h4>
                     </div>
                 </article>
                 <article class="card-grid-child">
                     <img src="./assets/images/categorias profesionales/desarrollador en wordpress.jpg" alt=""
                         class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrollador en Wordpress</h4>
+                        <h4 class="texto-m texto-white">Desarrollador en Wordpress</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/analista de datos.jpg" alt="" class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Analista de datos</h4>
+                        <h4 class="texto-m texto-white">Analista de datos</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/desarrollador escritorio.jpg" alt=""
                         class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Desarrolador Desktop</h4>
+                        <h4 class="texto-m texto-white">Desarrolador Desktop</h4>
                     </div>
                 </article>
                 <article class="card-grid-child ">
                     <img src="./assets/images/categorias profesionales/devops.png" alt="" class="card-img">
                     <div class="card-body-grid">
-                        <h4 class="texto-m ">Devops</h4>
+                        <h4 class="texto-m texto-white">Devops</h4>
                     </div>
                 </article>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-label="call-to-action">
+            <div class="info-text-cta-section">
+                <h2 class="titulo-centrado m-top-3  texto-xl" id="cta-section">Únete a la comunidad de
+                    profesionales de
+                    desarrolladores y empieza a a trabajar</h2>
+            </div>
+            <div class="btn-intro">
+                <button type="button" class="btn-1 btn-registro color-white texto-m">Buscar profesional</button>
+                <button type="button" class="btn-1 btn-login color-white texto-m">Buscar proyecto</button>
             </div>
         </section>
     </main>
