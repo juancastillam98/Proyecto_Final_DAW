@@ -1,0 +1,98 @@
+/*******************************************/
+/****Menús izquierda y derecha*****/
+/*******************************************/
+#menu-izq {
+    margin-right: 25px;
+
+}
+
+#menu-derecha {
+    margin-left: 15px;
+}
+
+
+
+
+/***************************************************************/
+/****************Formulario registro empresa************/
+/***************************************************************/
+
+.form-registro {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    max-width: 460px;
+    padding: 2.5em 3em;
+}
+
+.form-paragraph {
+    font-weight: 300;
+}
+
+.form-link {
+    font-weight: 700;
+}
+
+.form-container {
+    margin-top: 3em;
+    display: grid;
+    gap: 1.8em;
+}
+
+.form-group {
+    position: relative;
+    padding-top: 1em;
+}
+
+.form-input {
+    width: 100%;
+    background: none;
+    color: gainsboro;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/*
+.form-label:focus+.form-input,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-12px) scale(.7);
+    --transform-origin: left top;
+    color: #c10bc0;
+}*/
+
+
+.form-label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s .3s;
+}
+
+.subir-label {
+    transform: translateY(-12px) scale(.7);
+    padding-top: 1em;
+}
+
+.form-submit {
+    padding: 0.8em 2em;
+    margin-top: 2em;
+}
+
+.form-line {
+    position: absolute;
+}
+
+.warnings {
+    max-width: 480px;
+    text-align: center;
+    margin: auto;
+    color: rgb(242, 255, 0);
+    padding-top: 20px;
+}

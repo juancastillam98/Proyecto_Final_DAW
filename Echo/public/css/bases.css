@@ -1,0 +1,76 @@
+:root {
+    --bg-color-fondo: #323232;
+    --bg-color-fondo-300: #011640;
+    --bg-color-fondo-200: #201e59;
+    --bg-color-principal: #b600ff;
+    --bg-color-principal-300: #323232;
+    --bg-color-principal-200: #ee56ff;
+    --bg-color-accent: #0840b8;
+    --bg-color-accent-200: #88c8f0;
+    --color-texto: #e0e0e0;
+    --b-radius-xl: 1em;
+}
+
+.bg-color-fondo {
+    background-color: var(--bg-color-fondo);
+}
+
+.bg-color-fondo-300 {
+    background-color: var(--bg-color-fondo-300);
+}
+
+.bg-color-fondo-200 {
+    background-color: var(--bg-color-fondo-200);
+}
+
+.bg-color-principal {
+    background-color: var(--bg-color-principal);
+}
+
+.bg-color-principal-300 {
+    background-color: var(--bg-color-principal-300);
+}
+
+.bg-color-principal-200 {
+    background-color: var(--bg-color-fondo-200);
+}
+
+.bg-color-accent {
+    background-color: var(--bg-color-accent);
+}
+
+.bg-color-accent-200 {
+    background-color: var(--bg-color-accent-200);
+}
+
+.color-texto-blanco {
+    color: #e0e0e0;
+}
+
+.color-texto-negro {
+    color: #2a2a2a;
+}
+
+.b-radius-xl {
+    border-radius: var(--b-radius-xl);
+}
+
+textarea {
+    width: 100%;
+}
+
+.btn-principal {
+    background: linear-gradient(var(--bg-color-principal), var(--bg-color-principal-200));
+    padding: 0.75rem 1.2rem 0.75rem 1.2rem;
+    border-radius: var(--b-radius-xl);
+}
+
+.btn-principal:hover {
+    background-color: var(--bg-color-accent-200);
+    cursor: pointer;
+}
+
+.texto-input-centro {
+    text-align: center;
+    line-height: 48px;
+}
